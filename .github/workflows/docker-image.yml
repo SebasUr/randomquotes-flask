@@ -16,6 +16,6 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tagsauriber/express-randomquotes:latest
+      run: docker build . --file Dockerfile --tag sauriber/express-randomquotes:latest
     - name: Docker Push
       run: docker push sauriber/express-randomquotes
